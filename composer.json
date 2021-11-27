@@ -1,0 +1,33 @@
+{
+    "name": "zytme/zyt-me",
+    "description": "SortLink Generator",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "ZytMe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ZytMe",
+            "email": "info@zyt.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZytMe\\ZytMeServiceProvider"
+            ]
+        },
+        "lumen": {
+            "providers": [
+                "ZytMe\\ZytMeServiceProvider"
+            ]
+        }
+    }
+}
