@@ -17,9 +17,7 @@ class ZytMeServiceFacade
             'url' => $url
         ]);
 
-        dd($response->body());
-
-        return $url;
+        return $response->body();
     }
 
 }
