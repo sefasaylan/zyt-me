@@ -1,6 +1,8 @@
 # zyt-me
 SortLink Generator
 
+composer install zytme/zyt-me
+
 ##Lumen
 
 #####For service provider register
@@ -24,3 +26,4 @@ This package was built using [zyt.me](https://zyt.me).
 ```
 ZytMeServiceFacade::shorten('YOUR_LINK'));
 ```
+
