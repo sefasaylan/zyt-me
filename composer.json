@@ -2,9 +2,6 @@
     "name": "zytme/zyt-me",
     "description": "SortLink Generator",
     "type": "project",
-    "require": {
-        "guzzlehttp/guzzle": "7.4.x-dev"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
