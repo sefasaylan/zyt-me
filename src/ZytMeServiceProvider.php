@@ -20,9 +20,7 @@ class ZytMeServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/zytme/zytMe/config/zytme.php' => $this->config_path('zytme.php'),
-        ]);
+
     }
 
     public function register()
