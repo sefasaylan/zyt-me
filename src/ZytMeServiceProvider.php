@@ -7,9 +7,22 @@ use PhpParser\Node\Expr\FuncCall;
 
 class ZytMeServiceProvider extends ServiceProvider
 {
+    /**
+     * Get the configuration path.
+     *
+     * @param  string $path
+     * @return string
+     */
+    function config_path($path = '')
+    {
+        return app()->basePath() . '/config' . ($path ? '/' . $path : $path);
+    }
 
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/zytme/zytMe/config/zytme.php' => $this->config_path('zytme.php'),
+        ]);
     }
 
     public function register()

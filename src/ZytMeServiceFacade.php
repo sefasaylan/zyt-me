@@ -9,7 +9,7 @@ class ZytMeServiceFacade
 
     public static function shorten($url)
     {
-        $urlForService = "http://zyt-me.local/generate";
+        $urlForService = "https://zyt.com/generate";
 
         $response = Http::post($urlForService, [
             'public_key' => config("zytme.zytme_public_key"),
